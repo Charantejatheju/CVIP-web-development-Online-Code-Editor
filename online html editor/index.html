@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Code Editor</title>
+  <link rel="icon" href="dp.png"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/monokai.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/css/css.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/matchbrackets.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/xml/xml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/css/css.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="header-area">
+    <div class="container" >
+      <div class="pic">
+      <div class="header">
+          <a href="" class="logo"><i class="fa fa-code" aria-hidden="true">Charan's</i></a>
+         <h1 class="text"> Online code Editor </h1>
+
+        <ul class="navbar">
+          <li><a href="home">Home</a></li> 
+          <li><a href="about">About</a></li>
+          <li><a href="details">Details </a></li>
+          <li><a href="help">Help</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+
+        <div class="menu_icon">
+          <i class="fa fa-bars"></i>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </header>
+  <main>
+    <section class="boxes">
+      <div class="editor-container">
+        <div class="editor-header">
+          <h1 class="head">HTML</h1>
+        </div>
+        <textarea data-html><!--html code--><h2>hello world!</h2></textarea>
+      </div>
+      <div class="editor-container">
+        <div class="editor-header">
+          <h1 class="head">CSS</h1>
+          <textarea data-css>/*---css code---*/</textarea>
+        </div>
+      </div>
+      <div class="editor-container">
+        <div class="editor-header">
+          <h1 class="head">JS</h1>
+          <textarea data-js>// javascript code</textarea>
+        </div>
+      </div>
+
+    </section>
+    <div class="button-container">
+      <button id="run"class="hover-button">RUN <i class="fa fa-play" aria-hidden="true"></i></button>
+      <button id="clear"class="hover-button">CLEAR <i class="fa fa-times" aria-hidden="true"></i></button>
+    </div>
+    <iframe data-code>
+    </iframe>
+  </main>
+  <footer class="footer">
+    <small class="message">Thanks for visiting and happy coding!</small>
+    <small class="copyright">&copy; Copyright. All rights reserved.</small>
+  </footer>
+</body>
+
+</html>
